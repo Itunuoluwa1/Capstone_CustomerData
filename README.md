@@ -85,8 +85,9 @@ This shows that the avearge subscription duration of the data is 365.3498387.
 - Total number of active and canceled subscriptions.
 
 [Data Import](#data-import)\
-[Create Database](#create-database)
-
+[Create Database](#create-database)\
+[Select Statement](#select-statement)\
+[Actual Tasks](#actual-tasks)
 
 #### Data Import
 The raw Capstone Data is an excel file that has two tables in two different worksheet and cannot be imported into sql ordinarily. Firstly, I opened the file in excel and removed duplicate from the data to impact quality and accuracy of my data. Then, I saved each of the worksheet as a CSV(Comma Delimited) file and was eventually having two files; one for Sales Data and the other for Customer Data. This way is would be possible to insert the data. Now I inserted the data by clicking import flat file and ensured to change the datatype where necessary and was able to insert the data successfully.
@@ -96,6 +97,36 @@ A database is an organized collection of data that is stored and managed in a st
 ```SQL
 CREATE DATABASE CAPSTONE_DB
 ```
+
+#### Select Statement
+A select statement is a type of Data Query Language(DQL). A DQL is used to fetch the data from the database. I selected the Customer Data table in order to preview it.
+```SQL
+select * from [dbo].[CustomerData]
+```
+![sql cus data table](https://github.com/user-attachments/assets/b06b4256-558c-4cf3-a47b-cadb29f39029)
+
+#### Actual Tasks
+1. **Total number of customers from each region:** This displays the number of customers in each of regions.\
+The Query:
+```SQL
+select COUNT(*) as TotalCustomers, Region from [dbo].[CustomerData]
+group by region
+```
+The Table:\
+![sql cus data 1](https://github.com/user-attachments/assets/3ab7d8af-b941-43e3-abf4-4b2d5567db5d)
+
+2. **Most popular subscription type by the number of customers**\
+The Query:
+```SQL
+select top 1 COUNT(subscriptiontype) as TotalCustomers, SubscriptionType from customerdata
+group by subscriptiontype
+```
+The Table:
+![sql cus data 2](https://github.com/user-attachments/assets/aae6337a-661e-47f6-b3d5-9204c910875e)
+
+3. **Customers who canceled their subscription within 6 months:**
+
+
 
 
 
