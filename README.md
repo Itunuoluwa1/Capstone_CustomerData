@@ -11,17 +11,27 @@
 - Calculate the average subscription duration and identify the most popular subscription types.
 - Create any other interesting reports.
 
-[Remove Duplicate](#remove-duplicate)
+[Remove Duplicate](#remove-duplicate)\
+[Add Column](#add-column)\
+[Pivot Table](#pivot-table)
 
 #### Remove Duplicate
-First and foremost, in my dataset I removed duplicate to impact the quality, accuracy nad reliability of my data. After removing duplicates in my data, the data of 75,000 rows was reduced to 33,787 rows removing 41,213 rows, therefore, making the data more accurate.
+First and foremost, in my dataset I removed duplicate to impact the quality, accuracy and reliability of my data. After removing duplicates in my data, the data of 75,000 rows was reduced to 33,787 rows removing 41,213 rows, therefore, making the data more accurate.
 
 #### Add Column
-Knowing that I would be needing subscription duration and there is no column of subscription duration in my table, I created a new column naming it Subscription Duration and then I defined it's values as the difference between SubscriptionStart and SubscriptionEnd column
+Knowing that I would be needing subscription duration and there is no column of subscription duration in my table, I created a new column naming it Subscription Duration and then I defined it's values as the difference between SubscriptionStart and SubscriptionEnd column.
 ```EXCEL
-F2 - E2
+= F2 - E2
 ```
 
 #### Pivot Table
 I used pivot table and excel functions ton uncover key insight from the Customer data in the Capstone project. Pivot table is used for summarization of data in the project in order to uncover insights for reporting.\
 From the question I'm supposed to use Pivot Table to find subscription pattern.
+
+1. **Subscription Type By Average Subscription Duration:**
+A pivot table of subscription type by average subscription duration with pivot chart included.\
+![Cus Data Sub type by avg sub duration](https://github.com/user-attachments/assets/3c96d359-2c20-49a8-a63b-b31862b8839f)
+
+
+
+
