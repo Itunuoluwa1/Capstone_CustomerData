@@ -54,6 +54,7 @@ Now the report after using the subscription duration slicer.\
 
 5. **Subscription Type By Number Of Customers:**
 This pivot table shows the subcription type by the number of customers that used the subscription type. Pivot chart included.\
+![Cus Data sub type by cus count](https://github.com/user-attachments/assets/bfc9380d-616e-487b-ae0a-191ef50bbff9)
 
 
 
