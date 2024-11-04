@@ -4,7 +4,8 @@
 **Summary:** This project involves analyzing customer data for a subscription service to identify segments and trends. Your goal is to understand customer behavior, track subscription types, and identify key trends in cancellations and renewals. The final deliverable is a Power BI dashboard that presents your analysis.
 
 **Parts in the documentation**\
-[EXCEL](#excel)
+[EXCEL](#excel)\
+[SQL](#sql)
 
 ## EXCEL
 - Analyze customer data using pivot tables to find subscription patterns.
@@ -72,6 +73,29 @@ This shows that the avearge subscription duration of the data is 365.3498387.
 = INDEX(D2:D33788, MODE(MATCH(D2:D33788, D2:D33788, 0)))
 ```
 ![Cus Data Most sub type](https://github.com/user-attachments/assets/74db1f6c-e87e-4af9-acd0-3e7593d0b1f5)
+
+## SQL
+- Total number of customers from each region.
+- Most popular subscription type by the number of customers.
+- Customers who canceled their subscription within 6 months.
+- Average subscription duration for all customers.
+- Customers with subscriptions longer than 12 months.
+- Total revenue by subscription type.
+- Top 3 regions by subscription cancellations.
+- Total number of active and canceled subscriptions.
+
+[Data Import](#data-import)\
+[Create Database](#create-database)
+
+
+#### Data Import
+The raw Capstone Data is an excel file that has two tables in two different worksheet and cannot be imported into sql ordinarily. Firstly, I opened the file in excel and removed duplicate from the data to impact quality and accuracy of my data. Then, I saved each of the worksheet as a CSV(Comma Delimited) file and was eventually having two files; one for Sales Data and the other for Customer Data. This way is would be possible to insert the data. Now I inserted the data by clicking import flat file and ensured to change the datatype where necessary and was able to insert the data successfully.
+
+#### Create Database
+A database is an organized collection of data that is stored and managed in a structured way to allow for easy access, retrieval and manipulation. I created a database for my capstone data. Also note that SQL is not case-sensitive so I didn't neccesarily use one casing.
+```SQL
+CREATE DATABASE CAPSTONE_DB
+```
 
 
 
