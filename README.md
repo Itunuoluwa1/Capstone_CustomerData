@@ -13,7 +13,8 @@
 
 [Remove Duplicate](#remove-duplicate)\
 [Add Column](#add-column)\
-[Pivot Table](#pivot-table)
+[Pivot Table](#pivot-table)\
+[Excel Functions](excel-functions)
 
 #### Remove Duplicate
 First and foremost, in my dataset I removed duplicate to impact the quality, accuracy and reliability of my data. After removing duplicates in my data, the data of 75,000 rows was reduced to 33,787 rows removing 41,213 rows, therefore, making the data more accurate.
@@ -55,6 +56,23 @@ Now the report after using the subscription duration slicer.\
 5. **Subscription Type By Number Of Customers:**
 This pivot table shows the subcription type by the number of customers that used the subscription type. Pivot chart included.\
 ![Cus Data sub type by cus count](https://github.com/user-attachments/assets/bfc9380d-616e-487b-ae0a-191ef50bbff9)
+
+#### Excel Functions
+I used excel functions to make certain calculations and summarization in the dataset to attain insights from the project.
+
+1. **Average Subscription Duration:** I used the subscription duration column that I created with AVERAGE excel function to get the average subscription duration.
+```EXCEL
+= AVERAGE(I2:I33788)
+```
+![Cus Data Avg sub duration](https://github.com/user-attachments/assets/aef83405-2ff1-4a11-9f27-2dbfbb4c2fcb)\
+This shows that the avearge subscription duration of the data is 365.3498387.
+
+2. **Most Popular Subsription Types:** I used excel functions to get the most popular subscription type from the dataset.
+```EXCEL
+= INDEX(D2:D33788, MODE(MATCH(D2:D33788, D2:D33788, 0)))
+```
+![Cus Data Most sub type](https://github.com/user-attachments/assets/74db1f6c-e87e-4af9-acd0-3e7593d0b1f5)
+
 
 
 
