@@ -121,7 +121,7 @@ The Query:
 select top 1 COUNT(subscriptiontype) as TotalCustomers, SubscriptionType from customerdata
 group by subscriptiontype
 ```
-The Table:
+The Table:\
 ![sql cus data 2](https://github.com/user-attachments/assets/aae6337a-661e-47f6-b3d5-9204c910875e)
 
 3. **Customers who canceled their subscription within 6 months:** Firstly, I created a view of Subscription Duration that was called while finding the customers who canceled their subscription. This view contains two columns of customerID and SubscriptionDuration grouped by month.\
@@ -137,10 +137,64 @@ Now after creating the view, to get customers who canceled their subscription wi
 select * from vw_SubscriptionDuration
 where SubscriptionDuration <= 6
 ```
-The Table:
+The Table:\
 ![sql cus data 3](https://github.com/user-attachments/assets/df9543e8-d812-459d-aa96-0e5350838298)\
 We can see that there is no value in the table which means no customer canceled their subscription within 6 months.
 
+4. **Average subscription duration for all customers:** I did this in two forms, I found average subscription days duration and also found average subscription month duration.\
+The Query for days:
+```SQL
+select
+  AVG(DATEDIFF(DAY,subscriptionstart,subscriptionend))
+  as AverageDuration
+from CustomerData
+```
+![sql cus data 4a days](https://github.com/user-attachments/assets/a81bfaa8-aeb7-4b25-9def-bb38257a7c55)\
+I used the view that was created in question 3. The Query for month:
+```SQL
+select
+  AVG(subscriptionduration)
+  as AverageDuration
+from vw_SubscriptionDuration
+```
+![sql cus data 4b month](https://github.com/user-attachments/assets/65e1d4d2-0c00-44a3-b714-e97ace99220a)
+
+5. **Customers with subscriptions longer than 12 months:** I used the view that I created in question 3.\
+The Query:
+```SQL
+select * from vw_SubscriptionDuration
+where SubscriptionDuration > 12
+```
+The Table:\
+![sql cus data 5](https://github.com/user-attachments/assets/03d3ae74-e0ea-4a77-b400-b95333770938)\
+There is no value in the table showing that there was no customer whose subscription lasted longer than 12 months.
+
+6. **Total revenue by subscription type:**\
+The Query:
+```SQL
+select SUM(revenue) as TotalRevenue, SubscriptionType from CustomerData
+group by SubscriptionType
+```
+The Table:\
+![sql cus data 6](https://github.com/user-attachments/assets/17110b10-f18b-464c-8615-02941f072aec)
+
+7. **Top 3 regions by subscription cancellations**
+The Query:
+```SQL
+select top 3 Region, canceled from CustomerData 
+```
+In my CANCELED column, just as in logic circuits, my TRUE is the same as 1 and FALSE is the same as 0 and this is because I saved the datatype of the canceled column as bit and not a string i.e varchar or nvarchar. 
+The Table:\
+![sql cus data 7](https://github.com/user-attachments/assets/12dd4a35-08c8-4931-9193-9f2e34fd1a9d)
+
+8. **Total number of active and canceled subscriptions**
+The Query:
+```SQL
+select COUNT(canceled) as TotalCustomers, Canceled from customerdata
+group by canceled
+```
+The Table:\
+![sql cus data 8](https://github.com/user-attachments/assets/1ffb831a-28de-460f-a7a9-ea7874b80e9a)
 
 
 
