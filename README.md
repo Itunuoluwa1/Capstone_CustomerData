@@ -32,6 +32,30 @@ From the question I'm supposed to use Pivot Table to find subscription pattern.
 A pivot table of subscription type by average subscription duration with pivot chart included.\
 ![Cus Data Sub type by avg sub duration](https://github.com/user-attachments/assets/3c96d359-2c20-49a8-a63b-b31862b8839f)
 
+2. **Subscription Type By Sum Of Revenue:**
+A pivot table of subscription type by sum of revenue with pivot chart included.\
+![Cus Data sub type by sum of rev](https://github.com/user-attachments/assets/294157e5-7878-47c6-a3b5-e319efa77b89)
+
+3. **Subscription Type and Region By Sum of Revenue:**
+A pivot table of subscription type and region by sum of revenue with pivot chart and slicer included. The slicer is used to filter the data in the pivot table and chart to only the selected data.\
+![Cus Data Sub type, region and rev](https://github.com/user-attachments/assets/bc977feb-8359-4b85-88b6-45f5909675a8)\
+Now the report after using the region slicer.\
+![Cus Data East](https://github.com/user-attachments/assets/af89af92-5f47-4214-9fc5-2580cc6cc2bf)
+![Cus Data North](https://github.com/user-attachments/assets/4c9c8b1c-2984-44e5-8e78-7f5586564394)
+![Cus Data South](https://github.com/user-attachments/assets/67320051-4a30-4744-9d3a-6447f1be17b2)
+![Cus Data West](https://github.com/user-attachments/assets/b50a72ea-32b5-4f93-9335-dc05707f9964)
+
+4. **Subsciption Type, Cancelled Or Not By Sum Of Revenue:**
+A pivot table of subscription type, cancelled or not by sum of revenue with pivot chart and slicer included. The slicer is used to filter the data in the pivot table and chart to only the selected data. I added a subscription duration slicer.\
+![Cus data, canceled by sum of rev](https://github.com/user-attachments/assets/04b02da7-ea12-4e7d-8fb1-88fedd4c93bb)\
+Now the report after using the subscription duration slicer.\
+![Cus Data 365](https://github.com/user-attachments/assets/69d04175-53b0-4263-a4e0-63ee456bd181)
+![Cus Data 366](https://github.com/user-attachments/assets/ed163157-6863-49b7-9464-60cd52abf300)
+
+5. **Subscription Type By Number Of Customers:**
+This pivot table shows the subcription type by the number of customers that used the subscription type. Pivot chart included.\
+
+
 
 
 
