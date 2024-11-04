@@ -124,7 +124,24 @@ group by subscriptiontype
 The Table:
 ![sql cus data 2](https://github.com/user-attachments/assets/aae6337a-661e-47f6-b3d5-9204c910875e)
 
-3. **Customers who canceled their subscription within 6 months:**
+3. **Customers who canceled their subscription within 6 months:** Firstly, I created a view of Subscription Duration that was called while finding the customers who canceled their subscription. This view contains two columns of customerID and SubscriptionDuration grouped by month.\
+The view query:
+```SQL
+create view vw_SubscriptionDuration
+as
+select CustomerId, DATEDIFF(MONTH, subscriptionstart, subscriptionend) as SubscriptionDuration from customerdata
+```
+![cus data sql view](https://github.com/user-attachments/assets/16d13607-971d-457c-b902-af6529355fdb)\
+Now after creating the view, to get customers who canceled their subscription within 6 months. The Query:\
+```SQL
+select * from vw_SubscriptionDuration
+where SubscriptionDuration <= 6
+```
+The Table:
+![sql cus data 3](https://github.com/user-attachments/assets/df9543e8-d812-459d-aa96-0e5350838298)\
+We can see that there is no value in the table which means no customer canceled their subscription within 6 months.
+
+
 
 
 
