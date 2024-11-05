@@ -232,8 +232,9 @@ SUM(CustomerData[Revenue])
 I created a dashboard to visualize all that I did in my excel on this capstone customer data.\
 ![BI Cus Excel](https://github.com/user-attachments/assets/edbbef9e-9281-4bb2-aa77-69b29cd1f43c)
 
-
-
+#### SQL Insights
+To visualize all that I did in SQL on this my capstone customer data, I made all my question queries into views and then imported the views into my PowerBI and then visualized. \
+![BI Cus SQL](https://github.com/user-attachments/assets/b43a8068-7f63-4e00-801c-77d0f5a9798a)
 
 
 
