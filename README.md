@@ -5,7 +5,8 @@
 
 **Parts in the documentation**\
 [EXCEL](#excel)\
-[SQL](#sql)
+[SQL](#sql)\
+[Power BI](#power-bi)
 
 ## EXCEL
 - Analyze customer data using pivot tables to find subscription patterns.
@@ -203,8 +204,18 @@ group by canceled
 The Table:\
 ![sql cus data 8](https://github.com/user-attachments/assets/1ffb831a-28de-460f-a7a9-ea7874b80e9a)
 
+## Power BI
+Build a Power BI dashboard that visualizes key customer segments, cancellations, and subscription trends. Include slicers for interactive analysis.
 
+Power BI is a data visualization tool that converts data from different sources to make an interactive dashboard and BI reports.
 
+#### Data Import
+I imported my capstone data into my Power BI desktop and clicked transform data. In the transform state I removed duplicates from my data to make it more accurate. \
+I also added a custom column of Subsription Duration because I know that I would be needing it in my report.
+```
+= Duration.Days([SubscriptionEnd]) - ([SunscriptionStart])
+```
+ After doing this I loaded my data.
 
 
 
