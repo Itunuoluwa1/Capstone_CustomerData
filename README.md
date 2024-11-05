@@ -236,9 +236,14 @@ I created a dashboard to visualize all that I did in my excel on this capstone c
 To visualize all that I did in SQL on this my capstone customer data, I made all my question queries into views and then imported the views into my PowerBI and then visualized. \
 ![BI Cus SQL](https://github.com/user-attachments/assets/b43a8068-7f63-4e00-801c-77d0f5a9798a)
 
-#### Customer Data Dashboard
+#### Customer Segments
 This is a dashboard that visualizes interactions in the customer data. In this dashboard, I included slicers: The Region Slicer, Cancellation Slicer and Subscription Type Slicer. I also used filters majorly the Top N filter to visualize Top 10 and Top 1 vivisuals even Bottom values.\
 ![BI Cus Dash](https://github.com/user-attachments/assets/9dc6a53e-40d1-442e-8b8e-e5c4b4979e78)
+
+#### Cancellation And Subscription Trend
+This is the dashboard that show the trend ofg cancellation and subscription in the capstone Customer data set.\
+![BI Cus Trend](https://github.com/user-attachments/assets/efe8304c-b6b5-494e-b8cc-1105e38baa08)
+
 
 
 
