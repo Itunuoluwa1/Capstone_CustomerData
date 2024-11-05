@@ -209,6 +209,14 @@ Build a Power BI dashboard that visualizes key customer segments, cancellations,
 
 Power BI is a data visualization tool that converts data from different sources to make an interactive dashboard and BI reports.
 
+[Data Import](#data-import)\
+[Measures](#measures)\
+[Excel Insights](#excel-insights)\
+[SQL Insights](#sql-insights)\
+[Customer Segments](#custmer-segments)\
+[Cancellation And Subscription Trend](#cancellation-and-subscription-trend)
+
+
 #### Data Import
 I imported my capstone data into my Power BI desktop and clicked transform data. In the transform state I removed duplicates from my data to make it more accurate. \
 I also added a custom column of Subsription Duration because I know that I would be needing it in my report.
