@@ -15,7 +15,8 @@
 [Remove Duplicate](#remove-duplicate)\
 [Add Column](#add-column)\
 [Pivot Table](#pivot-table)\
-[Excel Functions](excel-functions)
+[Excel Functions](#excel-functions)\
+[Interesting Report](#interesting-report)
 
 #### Remove Duplicate
 First and foremost, in my dataset I removed duplicate to impact the quality, accuracy and reliability of my data. After removing duplicates in my data, the data of 75,000 rows was reduced to 33,787 rows removing 41,213 rows, therefore, making the data more accurate.
@@ -73,6 +74,12 @@ This shows that the avearge subscription duration of the data is 365.3498387.
 = INDEX(D2:D33788, MODE(MATCH(D2:D33788, D2:D33788, 0)))
 ```
 ![Cus Data Most sub type](https://github.com/user-attachments/assets/74db1f6c-e87e-4af9-acd0-3e7593d0b1f5)
+
+#### Interesting Report
+My personal report was a pivot table on subscription type, canceled by canceled count with pivot chart included.\
+This pivot table shows the number of people that canceled or not in each of the subscription types.\
+![Sub type canceled by canceled count report](https://github.com/user-attachments/assets/3351b0d1-fd59-4176-b192-bbc3d77ebb24)
+
 
 ## SQL
 - Total number of customers from each region.
