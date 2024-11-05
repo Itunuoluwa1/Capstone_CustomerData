@@ -228,6 +228,12 @@ Total Sales Revenue
 SUM(CustomerData[Revenue])
 ```
 
+#### Excel Insights
+I created a dashboard to visualize all that I did in my excel on this capstone customer data.\
+![BI Cus Excel](https://github.com/user-attachments/assets/edbbef9e-9281-4bb2-aa77-69b29cd1f43c)
+
+
+
 
 
 
