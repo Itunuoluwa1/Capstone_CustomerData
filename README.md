@@ -217,6 +217,16 @@ I also added a custom column of Subsription Duration because I know that I would
 ```
  After doing this I loaded my data.
 
+#### Measures 
+I created measures within my Customer Data.\
+Total Customers
+```
+COUNT(CustomerData[CustomerID])
+```
+Total Sales Revenue
+```
+SUM(CustomerData[Revenue])
+```
 
 
 
